@@ -82,7 +82,7 @@ const ProductsHero=()=>{
     return (
         <>
         <h1 className="text-center md:text-4xl text-3xl py-8">Our Top Products</h1>
-        <div className="grid md:grid-cols-4 grid-cols-1 gap-3">
+        <div className="grid md:grid-cols-4 grid-cols-1 gap-3 p-2">
             {
                 data.map((item,index)=>{
                     return (

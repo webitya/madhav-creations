@@ -71,7 +71,7 @@ export const Carousel = () => {
     
     return(
         <div 
-            className="relative overflow-hidden hover:cursor-pointer " 
+            className="relative overflow-hidden hover:cursor-pointer md:max-h-[500px] max-h-[210px]" 
             onMouseOver={handleMouseOver} 
             onMouseLeave={handleMouseLeave}
         >
