@@ -8,6 +8,8 @@ const AboutUs=()=>{
          <LayoutEl>
              <AboutHeroEl/>
              <h1>Raj Jaiswal</h1>
+            
+            
          </LayoutEl>
         </>
     )
