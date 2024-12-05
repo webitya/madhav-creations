@@ -57,9 +57,18 @@ export const FooterEl = () => {
         <p className="text-xs md:text-sm text-gray-400 text-center">
           © {currentYear.getFullYear()} Madhav Creation, Inc. All rights reserved.
         </p>
-        <p className="text-xs md:text-sm text-gray-400 text-center">
-          <p>Desgined by<a target='_blank'>Webitya.com</a></p>
-        </p>
+        <p className="text-lg md:text-xs text-gray-300 text-center my-1">
+  <span>Designed by </span>
+  <a 
+    target="_blank" 
+    href="https://webitya.com" 
+    rel="noopener noreferrer"
+    className="text-pink-500 underline underline-offset-2 decoration-pink-500 hover:text-pink-700 hover:decoration-pink-700 transition-all duration-300 ease-in-out font-medium"
+  >
+    Webitya.com
+  </a>
+</p>
+
       </div>
     </footer>
   );
