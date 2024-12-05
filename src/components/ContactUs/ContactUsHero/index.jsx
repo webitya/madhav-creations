@@ -5,12 +5,12 @@ import EmailJsForm from "./EmailJsForm"
 const ContactUsHero=()=>{
     return (
         <>
-        <div className="flex md:flex-row flex-col justify-center items-center p-2 gap-2 min-h-[500px]">
-           <div className="py-10 bg-red-300 md:w-1/2 p-2 h-full">
+        <div className="flex md:flex-row flex-col justify-center items-center p-2 gap-2 min-h-[500px] shadow-xl">
+           <div className="py-10  md:w-1/2 p-2 !h-full">
                  <h1 className="text-3xl">Madhav Creation</h1>
                  <p className="text-lg">Welcome to Madhav Creation, your trusted partner in high-quality plywood and Sunmica solutions. Established with a vision to deliver excellence in interior and construction materials, we take pride in offering an extensive range of products tailored to meet the diverse needs of our customers.At Madhav Creation, we understand that every project is unique, whether it's crafting elegant interiors, designing modern furniture, or building durable structures. That's why we source only the finest materials to ensure durability, aesthetic appeal, and value for money.</p>
            </div>
-           <div className="py-10 bg-green-300 md:w-1/2 w-full p-2 h-full">
+           <div className="py-10  md:w-1/2 w-full p-2 !h-full">
                 <EmailJsForm/>
            </div>
         </div>
