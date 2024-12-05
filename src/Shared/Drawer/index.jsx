@@ -8,7 +8,7 @@ const DrawerEl=()=>{
     const [open,setOpen]=useState(false);
     return (
         <>
-          <Button className="md-hidden" onClick={()=>setOpen(true)}><MenuOutlined/></Button>
+          <Button type="text" className="md:hidden block text-white text-3xl" onClick={()=>setOpen(true)}><MenuOutlined/></Button>
           <Drawer open={open} onClose={()=>setOpen(false)}>
               <ul>
                 <li>Home</li>
