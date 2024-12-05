@@ -1,13 +1,12 @@
 import LayoutEl from "../../Shared/LayoutEl"
-
+import GalleryComponents from "../../components/Gallery"
 
 
 const Gallery=()=>{
     const display=(
         <>
           <LayoutEl>
-            <h1>Gallery</h1>
-            <h1>Raj Gallery</h1>
+           <GalleryComponents />
           </LayoutEl>
         </>
     )
