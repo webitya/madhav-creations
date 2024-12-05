@@ -57,6 +57,9 @@ export const FooterEl = () => {
         <p className="text-xs md:text-sm text-gray-400 text-center">
           © {currentYear.getFullYear()} Madhav Creation, Inc. All rights reserved.
         </p>
+        <p className="text-xs md:text-sm text-gray-400 text-center">
+          <p>Desgined by<a target='_blank'>Webitya.com</a></p>
+        </p>
       </div>
     </footer>
   );
