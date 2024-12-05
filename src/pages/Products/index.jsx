@@ -1,3 +1,5 @@
+
+import ProductsHero from "../../components/Products/ProductsHero"
 import LayoutEl from "../../Shared/LayoutEl"
 
 
@@ -5,7 +7,7 @@ const Products=()=>{
     const display=(
         <>
           <LayoutEl>
-            <h1>Products</h1>
+              <ProductsHero/>
           </LayoutEl>
         </>
     )
