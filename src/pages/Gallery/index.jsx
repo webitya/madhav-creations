@@ -7,6 +7,7 @@ const Gallery=()=>{
         <>
           <LayoutEl>
             <h1>Gallery</h1>
+            <h1>Raj Gallery</h1>
           </LayoutEl>
         </>
     )
