@@ -4,49 +4,60 @@ import YouTubeIcon from '@mui/icons-material/YouTube';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
-export const FooterEl= () => {
-    const currentYear= new Date();
-    return(
-        <footer class="flex flex-col gap-12 items-center bg-[#221f1f] p-16 text-white">
-            <div className="flex gap-16">
-                <div ><a href="#" class="hover:underline">Home</a></div>
-                <div ><a href="#" class="hover:underline">About</a></div>
-                <div ><a href="#" class="hover:underline">Products</a></div>
-                <div ><a href="#" class="hover:underline">Gallery</a></div>
-                <div ><a href="#" class="hover:underline">Enquiry</a></div>
-                <div ><a href="#" class="hover:underline">Contact</a></div>
-            </div>
+export const FooterEl = () => {
+  const currentYear = new Date();
 
-            <div class="flex gap-8">
-                <a href="#" >
-                    <span class="">
-                        <WhatsAppIcon style={{fontSize: "1.75rem"}}/>        
-                    </span>
-                </a>
-                <a href="#" >
-                    <span class="">
-                        <InstagramIcon style={{fontSize: "1.75rem"}}/>        
-                    </span>
-                </a>
-                <a href="#" >
-                    <span class="">
-                        <XIcon style={{fontSize: "1.75rem"}}/>        
-                    </span>
-                </a>
-                <a href="#" >
-                    <span class="">
-                    <FacebookIcon style={{fontSize: "1.75rem"}}/>  
-                    </span>
-                </a>
-                <a href="#" >
-                    <span class=""> 
-                        <YouTubeIcon style={{fontSize: "1.75rem"}}/>      
-                    </span>
-                </a>
-            </div>
-            <p class="text-sm tracking-wide">
-                © {currentYear.getFullYear()} Madhav Creation, Inc. All rights reserved.
-            </p>
-        </footer>
-    );
-}
+  return (
+    <footer className="bg-gradient-to-r from-gray-800 via-gray-900 to-black p-8 text-white">
+      <div className="container mx-auto flex flex-col items-center gap-10">
+        <div className="flex flex-wrap justify-center gap-4 md:gap-8 text-center text-sm md:text-lg font-medium">
+          {["Home", "About", "Products", "Gallery", "Contact"].map((link, index) => (
+            <a
+              key={index}
+              href="#"
+              className="transition duration-300 hover:text-pink-500 hover:underline"
+            >
+              {link}
+            </a>
+          ))}
+        </div>
+
+        <div className="flex justify-center gap-4 md:gap-6">
+          <a
+            href="#"
+            className="p-2 md:p-3 bg-gray-700 rounded-full hover:bg-pink-500 transition duration-300"
+          >
+            <WhatsAppIcon style={{ fontSize: "1.5rem", mdFontSize: "2rem" }} />
+          </a>
+          <a
+            href="#"
+            className="p-2 md:p-3 bg-gray-700 rounded-full hover:bg-purple-500 transition duration-300"
+          >
+            <InstagramIcon style={{ fontSize: "1.5rem", mdFontSize: "2rem" }} />
+          </a>
+          <a
+            href="#"
+            className="p-2 md:p-3 bg-gray-700 rounded-full hover:bg-blue-500 transition duration-300"
+          >
+            <XIcon style={{ fontSize: "1.5rem", mdFontSize: "2rem" }} />
+          </a>
+          <a
+            href="#"
+            className="p-2 md:p-3 bg-gray-700 rounded-full hover:bg-blue-700 transition duration-300"
+          >
+            <FacebookIcon style={{ fontSize: "1.5rem", mdFontSize: "2rem" }} />
+          </a>
+          <a
+            href="#"
+            className="p-2 md:p-3 bg-gray-700 rounded-full hover:bg-red-600 transition duration-300"
+          >
+            <YouTubeIcon style={{ fontSize: "1.5rem", mdFontSize: "2rem" }} />
+          </a>
+        </div>
+        <p className="text-xs md:text-sm text-gray-400 text-center">
+          © {currentYear.getFullYear()} Madhav Creation, Inc. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  );
+};
