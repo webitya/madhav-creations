@@ -3,7 +3,7 @@ import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 
 const HeroParaSection = () => {
     return (
-        <div className="w-2/5 h-3/4 flex flex-col gap-3">
+        <div className="p-2  md:w-1/2 w-full">
             <h2 
             className={`
                 text-center 
@@ -11,7 +11,7 @@ const HeroParaSection = () => {
                 text-2xl
                 leading-10 
                 font-bold 
-                text-white
+                text-white 
                 bg-gradient-to-b from-indigo-700 to-indigo-500
             `}
             >
@@ -35,9 +35,9 @@ const HeroParaSection = () => {
 
 export const Heroes= () => {
     return (
-        <div className="flex justify-center gap-5 py-8">
+        <div className="flex md:flex-row flex-col justify-center gap-5 py-8 p-4">
             <HeroParaSection />
-            <img src="/heroImage.jpg" alt="img"className="w-1/2 h-[24rem] object-cover" />
+            <img src="/heroImage.jpg" alt="img"className="md:w-1/2 md:px-10 px-4 w-full h-[24rem] object-cover" />
         </div>
     );
 }

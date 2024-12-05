@@ -7,11 +7,9 @@ import ExploreIcon from '@mui/icons-material/Explore';
 export const Expertise = () => {
 
     return(
-        <div className="w-[90%] mx-auto mb-32 mt-16 flex flex-col gap-24 relative">
+        <div className="">
             <h2 className="text-4xl uppercase text-indigo-600 text-center">Reason why you should trust us.</h2>
-            <div className="w-[42rem] h-px bg-indigo-500 absolute top-12 left-1/2 -translate-x-1/2"></div>
-            
-            <div className="flex justify-between">
+            <div className="grid md:grid-cols-4 grid-cols-1 gap-5 p-6 justify-center">
                 <ReasonCard title={"expertise"} des={"With over 35 year of experince of making high quality and multitudes of different products,Madhavs Creation can proudly calim high expertise."}>
                     <MilitaryTechIcon style={{fontSize:'4rem', color: "rgb(79 70 229)"}}/>
                 </ReasonCard>
@@ -44,7 +42,7 @@ function ReasonCard({ children, title, des }) {
     }
     return(
         <div 
-        className="w-[15rem] flex flex-col gap-10 items-center p-4" 
+        className=" flex flex-col gap-10 items-center p-4" 
         style={{
             boxShadow: hoverBoxShadow? 
             "0px 3px 5px 4px rgba(0, 0, 0, 0.1)": 
