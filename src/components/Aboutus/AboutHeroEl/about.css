@@ -38,7 +38,11 @@ body {
     font-size: 2rem;
     color: #5e2db6;
   }
-  
+  .team-section h2 {
+    margin-bottom:6px;
+    color: purple;
+    font-size:1.5rem;
+  }
   .journey-content {
     display: flex;
     gap: 2rem;
@@ -166,12 +170,30 @@ body {
       flex-direction: column; /* Stack cards vertically */
       gap: 1.5rem;
     }
-  
-    .team-cards {
+    .team-section {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    margin-left:40px;
+    }
+    .team-card{
       flex-direction: column; /* Stack team cards vertically */
       gap: 1.5rem;
+      display: flex;
+      padding: 0.4rem;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
-  
+    .team-card {
+      background: #fff;
+      border-radius: 10px;
+      text-align: center;
+     
+      width: 100%;
+      max-width: 250px; /* Set a maximum width */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
     .contact-button {
       padding: 0.8rem 1.5rem;
     }
